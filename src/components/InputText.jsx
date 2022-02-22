@@ -1,9 +1,17 @@
 import React from 'react';
 
-const InputText = () => {
+const InputText = ({ handleInput, firstName }) => {
   return (
     <section>
-      <h1>Hello </h1>
+      <form>
+        <input
+          onChange={handleInput}
+          type="text"
+          placeholder="firstName"
+          value={firstName}
+        />
+      </form>
+      <h2>{firstName}</h2>
     </section>
   );
 };
