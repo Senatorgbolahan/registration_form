@@ -32,11 +32,11 @@ export default function App() {
       <InputText
         // setFirstName={setFirstName}
         firstName={firstName}
+        lastName={lastName}
+        email={email}
         handleFN={handleFN}
         handleLN={handleLN}
         handleEMail={handleEMail}
-        lastName={lastName}
-        email={email}
         handleDetails={handleDetails}
       />
       <DisplayDetails stores={stores} />
