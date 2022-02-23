@@ -7,6 +7,7 @@ const InputText = ({
   firstName,
   lastName,
   email,
+  handleDetails,
 }) => {
   return (
     <section>
@@ -34,9 +35,14 @@ const InputText = ({
           value={email}
         />
       </form>
-      <h2>{firstName }</h2>
-      <h2>{lastName }</h2>
-      <h2>{email }</h2>
+      <br />
+      <br />
+
+      {/* <h2>{lastName}</h2>
+      <h2>{email}</h2> */}
+      <button onClick={handleDetails} type="submit">
+        Submit
+      </button>
     </section>
   );
 };
