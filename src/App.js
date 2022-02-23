@@ -7,16 +7,27 @@ export default function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [store, setstore] = useState([]);
 
-  const handleInput = (e) => {
+  const handleFN = (e) => {
     setFirstName(e.target.value);
+  };
+  const handleLN = (e) => {
+    setLastName(e.target.value);
+  };
+  const handleEMail = (e) => {
+    setEmail(e.target.value);
   };
   return (
     <div>
       <InputText
         // setFirstName={setFirstName}
         firstName={firstName}
-        handleInput={handleInput}
+        handleFN={handleFN}
+        handleLN={handleLN}
+        handleEMail={handleEMail}
+        lastName={lastName}
+        email={email}
       />
     </div>
   );
