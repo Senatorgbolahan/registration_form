@@ -21,7 +21,9 @@ export default function App() {
   };
   const handleDetails = () => {
     let names = {
-      name: firstName,
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
     };
     setstore([...stores, names]);
   };

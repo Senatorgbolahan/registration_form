@@ -4,7 +4,9 @@ const DisplayDetails = ({ stores }) => {
   return (
     <div>
       {stores.map((store) => (
-        <p>{store.name}</p>
+        <p>{store.firstName}</p>,
+        <p>{store.lastName}</p>,
+        <p>{store.email}</p>
       ))}
     </div>
   );
